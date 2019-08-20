@@ -6,7 +6,7 @@ class Ball:
     def __init__(self, pos):
         self.pos = pos
         self.color = pygame.Color(randint(0, 255), randint(0, 255), randint(0, 255))
-        self.size = 20
+        self.size = randint(5, 30)
 
     def update(self, d):
         if self.pos[1] <= YMAX - self.size:
